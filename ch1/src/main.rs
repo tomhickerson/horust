@@ -3,14 +3,16 @@ fn main() {
     // Chapter one - Recursion and Callbacks
 
     // Decimal to Binary Conversion 
-    let mut st1:String = String::new();
-    st1.push('a');
+    let y:i32 = to_binary(16);
+    println!("to binary: {}", y);
     // Factorials 
     let x:u64 = factorial(6);
     println!("factorial: {}", x);
+    // Tower of Hanoi 
 
-    let y:i32 = to_binary(16);
-    println!("to binary: {}", y);
+    // Data in a Hierarchy 
+
+    
 }
 
 fn factorial(n: u64) -> u64 {
