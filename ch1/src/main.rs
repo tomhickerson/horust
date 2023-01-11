@@ -5,6 +5,8 @@ fn main() {
     // Decimal to Binary Conversion 
     let y:i32 = to_binary(16);
     println!("to binary: {}", y);
+    let z:i32 = to_binary(32);
+    println!("to binary: {}", z);
     // Factorials 
     let x:u64 = factorial(6);
     println!("factorial: {}", x);
