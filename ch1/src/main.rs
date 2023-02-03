@@ -1,3 +1,5 @@
+use std::ops::Mul;
+
 fn main() {
     println!("Hello, world!");
     // Chapter one - Recursion and Callbacks
@@ -10,6 +12,9 @@ fn main() {
     // Factorials 
     let x:u64 = factorial(6);
     println!("factorial: {}", x);
+
+    let x2:u64 = factorial2(6);
+    println!("factorial 2: {}", x2);
     // Tower of Hanoi 
 
     // Data in a Hierarchy 
@@ -22,6 +27,11 @@ fn factorial(n: u64) -> u64 {
         0 | 1 => 1,
         n     => n * factorial(n - 1), 
     }
+}
+
+fn factorial2(n: u64) -> u64 {
+    let ret:u64 = (1..n+1).fold(1, Mul::mul); 
+    ret
 }
 
 fn to_binary(mut decimal: i32) -> i32 {
