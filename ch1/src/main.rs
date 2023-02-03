@@ -30,8 +30,7 @@ fn factorial(n: u64) -> u64 {
 }
 
 fn factorial2(n: u64) -> u64 {
-    let ret:u64 = (1..n+1).fold(1, Mul::mul); 
-    ret
+    (1..n+1).fold(1, Mul::mul)
 }
 
 fn to_binary(mut decimal: i32) -> i32 {
