@@ -15,6 +15,9 @@ fn main() {
 
     let x2:u64 = factorial2(6);
     println!("factorial 2: {}", x2);
+
+    let x3:u64 = factorial3(6);
+    println!("factorial 3: {}", x3);
     // Tower of Hanoi 
 
     // Data in a Hierarchy 
@@ -32,6 +35,10 @@ fn factorial(n: u64) -> u64 {
 fn factorial2(n: u64) -> u64 {
     (1..n+1).fold(1, Mul::mul)
 }
+
+fn factorial3(n: u64) -> u64 {
+    (1..n+1).fold(1, |acc, i| acc * i)
+} 
 
 fn to_binary(mut decimal: i32) -> i32 {
     if decimal == 0 {
