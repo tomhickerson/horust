@@ -63,3 +63,8 @@ fn to_binary(mut decimal: i32) -> i32 {
         }
     }
 }
+
+fn untag_html(html: String) -> String {
+    let mut plaintxt = String::new();
+    plaintxt 
+}
